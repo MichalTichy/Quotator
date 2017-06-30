@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Windows.Forms;
 
-namespace Quotator
+namespace Quotator.QuoteProvider
 {
     /// <summary>
     /// Provides quotes from quote.txt file stored in the same folder as application.
