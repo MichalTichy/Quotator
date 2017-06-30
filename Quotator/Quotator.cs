@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Quotator
 {
-    public partial class Form1 : Form
+    public partial class Quotator : Form
     {
-        public Form1()
+        public Quotator()
         {
             InitializeComponent();
         }
