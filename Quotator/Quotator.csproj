@@ -51,6 +51,7 @@
     <Compile Include="Quotator.Designer.cs">
       <DependentUpon>Quotator.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuoteProvider\FakeQuoteProvider.cs" />
     <Compile Include="QuoteProvider\IQuoteProvider.cs" />
     <Compile Include="QuoteProvider\LocalFileQuoteProvider.cs" />
     <Compile Include="Program.cs" />
