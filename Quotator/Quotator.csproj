@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="FormExtensions.cs" />
     <Compile Include="Quotator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,7 +55,7 @@
     </Compile>
     <Compile Include="QuoteProvider\FakeQuoteProvider.cs" />
     <Compile Include="QuoteProvider\IQuoteProvider.cs" />
-    <Compile Include="QuoteProvider\LocalFileQuoteProvider.cs" />
+    <Compile Include="QuoteProvider\FileQuoteProvider.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

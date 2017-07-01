@@ -7,19 +7,21 @@ namespace Quotator.QuoteProvider
     /// <summary>
     /// Provides quotes from quote.txt file stored in the same folder as application.
     /// </summary>
-    public class LocalFileQuoteProvider : IQuoteProvider
+    public class FileQuoteProvider : IQuoteProvider
     {
+        private readonly string filePath;
+
         protected static Random random=new Random(DateTime.Now.Millisecond);
-        
-        protected virtual string GetFilePath()
+
+        public FileQuoteProvider(string filePath)
         {
-            return $"{Path.GetDirectoryName(Application.ExecutablePath)}/quotes.txt";
+            this.filePath = filePath;
         }
         
         /// <inheritdoc />
         public string GetRandomQuote()
         {
-            var quotes = File.ReadAllLines(GetFilePath());
+            var quotes = File.ReadAllLines(filePath);
             return quotes[random.Next(0, quotes.Length - 1)];
         }
     }
